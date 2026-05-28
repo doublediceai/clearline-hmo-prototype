@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import TrustBar from './components/TrustBar'
@@ -42,6 +43,7 @@ export default function App() {
         open={contactOpen}
         onClose={() => setContactOpen(false)}
       />
+      <Analytics />
     </div>
   )
 }
